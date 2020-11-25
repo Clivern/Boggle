@@ -12,19 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-variable "access_key" {
+variable "ACCESS_KEY" {
   type        = string
   default     = ""
   description = "Access Key"
 }
 
-variable "secret_key" {
+variable "SECRET_KEY" {
   type        = string
   default     = ""
   description = "Secret Key"
 }
 
-variable "aws_region" {
+variable "AWS_REGION" {
   type        = string
   default     = "us-west-1"
   description = "AWS Region"
