@@ -1,4 +1,3 @@
-### Usage
 
 1. Create `terraform.tfvars` and define required vars.
 
