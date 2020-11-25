@@ -26,16 +26,28 @@ jobs:
       - name: Terraform Init
         id: init
         run: terraform init
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
       - name: Terraform Validate
         id: validate
         run: terraform validate -no-color
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
       - name: Terraform Plan
         id: plan
         if: github.event_name == 'pull_request'
         run: terraform plan -no-color -input=false
         continue-on-error: true
+        env:
+          AWS_REGION: ${{ secrets.AWS_REGION }}
+          ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
       - uses: actions/github-script@v6
         if: github.event_name == 'pull_request'
