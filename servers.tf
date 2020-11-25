@@ -14,5 +14,5 @@
 
 # Create elastic container registry (ECR)
 resource "aws_ecr_repository" "ubuntu" {
-  name                 = "ubuntu"
+  name = "ubuntu"
 }
