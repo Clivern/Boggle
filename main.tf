@@ -13,7 +13,6 @@
 # limitations under the License.
 
 provider "aws" {
-  profile    = "default"
   region     = var.region
   access_key = var.access
   secret_key = var.secret
