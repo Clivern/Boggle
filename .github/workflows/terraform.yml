@@ -34,10 +34,10 @@ jobs:
 
       - name: Terraform Init
         env:
-          AWS_REGION: ${{ secrets.AWS_REGION }}
-          ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
-          SECRET_KEY: ${{ secrets.SECRET_KEY }}
-        run: AWS_REGION='${{ secrets.AWS_REGION }}' ACCESS_KEY='${{ secrets.ACCESS_KEY }}' SECRET_KEY='${{ secrets.SECRET_KEY }}' terraform init
+          TF_VAR_AWS_REGION: ${{ secrets.AWS_REGION }}
+          TF_VAR_ACCESS_KEY: ${{ secrets.ACCESS_KEY }}
+          TF_VAR_SECRET_KEY: ${{ secrets.SECRET_KEY }}
+        run: terraform init
 
       - name: Terraform Validate
         run: terraform validate -no-color
