@@ -2,15 +2,16 @@
 1. Create `terraform.tfvars` and define required vars.
 
 ```zsh
-access_key        = "~~"
-secret_key        = "~~"
+region            = "us-west-1"
+access            = "~~"
+secret            = "~~"
 ```
 
 or add as environment variables.
 
 ```zsh
-export access_key=...
-export secret_key=...
+export access=...
+export secret=...
 ```
 
 2. Create a digitalocean token from digitalocean dashboard and then run `terraform init`.
