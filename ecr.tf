@@ -13,10 +13,6 @@
 # limitations under the License.
 
 # Create elastic container registry (ECR)
-resource "aws_ecr_repository" "ubuntu" {
-  name = "ubuntu"
-}
-
-resource "aws_ecr_repository" "alpine" {
-  name = "alpine"
-}
+# resource "aws_ecr_repository" "ubuntu" {
+#   name = "ubuntu"
+# }
