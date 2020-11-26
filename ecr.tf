@@ -11,3 +11,12 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+# Create elastic container registry (ECR)
+resource "aws_ecr_repository" "ubuntu" {
+  name = "ubuntu"
+}
+
+resource "aws_ecr_repository" "alpine" {
+  name = "alpine"
+}
