@@ -1,3 +1,4 @@
+### Getting Started
 
 1. Create `terraform.tfvars` and define required vars.
 
@@ -20,3 +21,10 @@ $ export secret=...
 3. Run `terraform plan` to check the changes.
 
 4. Run `terraform apply` to perform the action.
+
+### Todo
+
+- [] k8s with terraform
+- [] install istio.
+- [] install kiali.
+- [] create two small applications that uses istio.
