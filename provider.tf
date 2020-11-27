@@ -18,6 +18,16 @@ terraform {
       source  = "hashicorp/aws"
       version = "~> 4.15"
     }
+
+    local = {
+      source  = "hashicorp/local"
+      version = "~> 2.2.3"
+    }
+
+    kubernetes = {
+      source  = "hashicorp/kubernetes"
+      version = "~> 2.12.1"
+    }
   }
 
   required_version = ">= 1.0.7"
