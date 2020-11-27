@@ -24,7 +24,7 @@ $ export secret=...
 
 ### Todo
 
-- [] k8s with terraform
-- [] install istio.
-- [] install kiali.
-- [] create two small applications that uses istio.
+- [ ] K8s with Terraform.
+- [ ] Install Istio.
+- [ ] Install Kiali.
+- [ ] Create two small applications that uses Istio.
