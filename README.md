@@ -1,6 +1,8 @@
 ### Getting Started
 
-1. Create `terraform.tfvars` and define required vars.
+1. Create AWS access token and secret.
+
+2. Create `terraform.tfvars` and define required vars.
 
 ```zsh
 region            = "us-west-1"
@@ -16,11 +18,11 @@ $ export access=...
 $ export secret=...
 ```
 
-2. Create a digitalocean token from digitalocean dashboard and then run `terraform init`.
+3. Run `terraform init`.
 
-3. Run `terraform plan` to check the changes.
+4. Run `terraform plan` to check the changes.
 
-4. Run `terraform apply` to perform the action.
+5. Run `terraform apply` to perform the action.
 
 ### Todo
 

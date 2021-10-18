@@ -35,10 +35,10 @@ terraform {
 
 terraform {
   backend "s3" {
-    bucket         = "pollux-tf-state"
-    key            = "pollux/terraform.tfstate"
+    bucket         = "boggle-tf-state"
+    key            = "boggle/terraform.tfstate"
     region         = "us-west-1"
-    dynamodb_table = "pollux-tf-locks"
+    dynamodb_table = "boggle-tf-locks"
     encrypt        = true
     profile        = "default"
   }
